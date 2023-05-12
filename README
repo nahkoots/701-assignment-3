@@ -1,0 +1,44 @@
+https://github.com/nahkoots/701-assignment-3
+
+Three data structures are defined in the file implementation.py. At the bottom of implementation.py are three functions that illustrate how to use these structures.
+
+
+The functions for each data structure should be used as follows:
+Bloom:
+__init__(self, max_elements, error_rate):
+Constructor. Provide the desired maximum number of elements and the desired maximum false positive probability.
+
+build_filter(self, keys):
+Builds the data structure on the keys provided.
+	
+query_filter(self, key):
+Queries the structure for the key provided.
+	
+size(self):
+Returns the size of the internal bbhash data structure as reported by Pympler's asizeof().
+		
+MPHF:
+__init__(self):
+Constructor.
+	
+build_table(self, keys):
+Builds the data structure on the keys provided.
+	
+query_table(self, key):
+Queries the structure for the key provided.
+	
+size(self):
+Returns the size of the internal bbhash data structure as reported by its get_mem() function.
+		
+AugMPHF:
+__init__(self, num_elements, fingerprint_size):
+Constructor. Provide the number of elements to be stored in the hash table and the number of bits to store for each fingerprint.
+	
+build_table(self, keys):
+Builds the data structure on the keys provided.
+	
+query_table(self, key):
+Queries the structure for the key provided.
+	
+size(self):
+Returns the size of the auxiliary array. Does not return the size of the bbhash object.
